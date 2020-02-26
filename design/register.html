@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skenvent - Homepage</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/08d9667f06.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo:700|Hind&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style/css/main.css" />
+  </head>
+  <body>
+    <!-- Page wrapper -->
+    <div id="wrapper">
+      <div class="box-row">
+        <div class="box use-image">
+          <img src="./img/popular.svg" alt="" />
+        </div>
+        <div class="box form">
+          <form action="" id="multi">
+            <!-- intro -->
+            <div class="intro">
+              Let's discover a new world &amp;
+              <br />
+              easily manage your inventory.
+              <div class="sub-intro">
+                Let's get a new account for you.
+              </div>
+            </div>
+            <!-- end intro -->
+
+            <!-- progress -->
+            <div class="progress mt-n1">
+              <span class="progress-list active"></span>
+              <span class="progress-list"></span>
+              <span class="progress-list"></span>
+              <span class="progress-list"></span>
+              <span class="progress-list"></span>
+            </div>
+
+            <!-- step 1 -->
+            <div id="step-1" class="mt-1">
+              <h2 class="mt-1">Personal Information</h2>
+              <div class="form-group">
+                <label for="fullname"
+                  >what we can call you?
+                  <i
+                    class="ic_fullname text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  class="form-control"
+                  placeholder="e.g: John Smith"
+                  autocomplete="off"
+                />
+                <small id="err_fullname" class="err"></small>
+              </div>
+              <div class="form-group">
+                <label for="phone"
+                  >enter your phone number :
+                  <i
+                    class="ic_phone text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  placeholder="081x xxxx xxxx"
+                  autocomplete="off"
+                />
+                <small id="err_phone" class="err"></small>
+              </div>
+              <div class="btn-box end">
+                <a href="index.html" class="btn-transparent">Back to Sign In</a>
+                <button type="button" id="next-1" class="btn-primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+            <!-- end step 1 -->
+
+            <!-- step 2 -->
+            <div id="step-2" class="mt-1">
+              <h2 class="mt-1">Account Information</h2>
+              <div class="form-group">
+                <label for="email"
+                  >your email here :
+                  <i
+                    class="ic_email text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="e.g: johnsmith@gmail.com"
+                  autocomplete="off"
+                />
+                <small id="err_email" class="err"></small>
+              </div>
+              <div class="form-group">
+                <label for="username"
+                  >create your username :
+                  <i
+                    class="ic_username text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  placeholder="e.g: Johnsmith"
+                  autocomplete="off"
+                />
+                <small id="err_username" class="err"></small>
+              </div>
+              <div class="btn-box end">
+                <button type="button" id="prev-2" class="btn-transparent">
+                  Previous Step
+                </button>
+                <button type="button" id="next-2" class="btn-primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+            <!-- end step 2 -->
+
+            <!-- step 3 -->
+            <div id="step-3" class="mt-1">
+              <h2 class="mt-1 mb-1">Private Information</h2>
+              <div class="form-group">
+                <label
+                  >Choose your gender :
+                  <i
+                    class="ic_gender text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+              </div>
+              <div class="form-group-row">
+                <div class="col">
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div class="col">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                    checked
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <small id="err_gender" class="err"></small>
+              </div>
+              <div class="form-group mt-2">
+                <label for="address"
+                  >I want to know your address :
+                  <i
+                    class="ic_address text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <textarea
+                  name="address"
+                  id="address"
+                  class="form-control"
+                  cols="10"
+                  rows="1"
+                ></textarea>
+                <small id="err_address" class="err"></small>
+              </div>
+              <div class="btn-box end">
+                <button type="button" id="prev-3" class="btn-transparent">
+                  Previous Step
+                </button>
+                <button type="button" id="next-3" class="btn-primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+            <!-- end step 3 -->
+
+            <!-- step 4 -->
+            <div id="step-4" class="mt-1">
+              <h2>Born Information</h2>
+
+              <div class="form-group">
+                <label for="borndate"
+                  >When you born?
+                  <i
+                    class="ic_borndate text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="date"
+                  name="borndate"
+                  id="borndate"
+                  class="form-control"
+                />
+                <small id="err_borndate" class="err"></small>
+              </div>
+              <div class="btn-box end">
+                <button type="button" id="prev-4" class="btn-transparent">
+                  Previous Step
+                </button>
+                <button type="button" id="next-4" class="btn-primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+            <!-- end step 4 -->
+
+            <!-- step 5 -->
+            <div id="step-5" class="mt-1">
+              <h2 class="mt-1">Password Information</h2>
+              <div class="form-group">
+                <label for="password"
+                  >Create your password :
+                  <i
+                    class="ic_password text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  name="password"
+                  value="password"
+                  autocomplete="off"
+                />
+                <small id="err_password" class="err"></small>
+              </div>
+              <div class="form-group">
+                <label for="cpassword"
+                  >Confirm your password :
+                  <i
+                    class="ic_cpassword text-danger fas fa-fw fa-exclamation-triangle"
+                  ></i>
+                </label>
+                <input
+                  type="password"
+                  id="cpassword"
+                  class="form-control"
+                  name="cpassword"
+                  value="password"
+                  autocomplete="off"
+                />
+                <small id="err_cpassword" class="err"></small>
+              </div>
+
+              <div class="btn-box end">
+                <button type="button" id="prev-5" class="btn-transparent">
+                  Previous Step
+                </button>
+                <button type="submit" name="submit" class="btn-primary">
+                  Create My Account
+                </button>
+              </div>
+            </div>
+            <!-- end step 5 -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End page wrapper -->
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- own js -->
+    <script src="https://unpkg.com/imask"></script>
+    <script src="/script/events.js"></script>
+    <script src="/script/mask.js"></script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  width: 100% !important;
+  max-width: 1920px;
+  padding: 0;
+}
+body #wrapper .progress, body #wrapper .form, body #wrapper .use-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body #wrapper .box-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+body #wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: "Hind";
+}
+body #wrapper .box-row {
+  width: 100% !important;
+  height: 100vh !important;
+}
+body #wrapper .box-row > .box {
+  flex: 1;
+  height: 100% !important;
+}
+body #wrapper .box-row > .box:nth-child(2) {
+  flex: 1.2 !important;
+}
+body #wrapper .use-image {
+  padding: 4rem;
+  width: 100% !important;
+  height: 100% !important;
+}
+body #wrapper .use-image > img {
+  width: 80%;
+}
+body #wrapper .form {
+  padding: 0rem 4rem;
+}
+body #wrapper .form form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 85vh;
+}
+body #wrapper .form form #step-2,
+body #wrapper .form form #step-3,
+body #wrapper .form form #step-4,
+body #wrapper .form form #step-5 {
+  display: none;
+}
+body #wrapper .form form .btn-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  height: fit-content;
+  align-items: center;
+  padding: 0;
+  margin-top: 30px;
+}
+body #wrapper .form form .btn-box.end {
+  justify-content: flex-end !important;
+}
+body #wrapper .form form .btn-box.start {
+  justify-content: flex-start;
+}
+body #wrapper .form form .btn-box.center {
+  justify-content: center;
+}
+body #wrapper .form form .inform {
+  color: rgba(23, 29, 33, 0.6);
+  margin-top: 10px;
+}
+body #wrapper .form form .inform small {
+  font-size: 11pt;
+}
+body #wrapper .form form .inform a {
+  text-decoration: none;
+}
+body #wrapper .form form .inform a:hover {
+  text-decoration: underline;
+}
+body #wrapper .form form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+body #wrapper .form form .form-group:not(:first-child) {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+body #wrapper .form form .form-group .err {
+  color: #eb4d4b;
+  margin-top: 3px;
+}
+body #wrapper .form form .form-group label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+}
+body #wrapper .form form .form-group label #showPassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #26A8FF;
+  font-weight: bold;
+  cursor: pointer;
+}
+body #wrapper .form form .form-group > textarea {
+  outline: none;
+  border: none;
+  background: #EFF7FC;
+  padding: 0.9rem 1rem;
+  font-size: 12pt;
+  border-radius: 2px;
+  color: #171D21;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-property: background, border;
+  border: 1px solid transparent;
+  resize: vertical;
+  margin-top: 3px;
+}
+body #wrapper .form form .form-group > textarea:focus {
+  background: white;
+  border: 1px solid #26A8FF;
+}
+body #wrapper .form form .form-group > textarea.--invalid {
+  border: 1px solid #eb4d4b;
+  background: white;
+}
+body #wrapper .form form .form-group > input {
+  outline: none;
+  border: none;
+  background: #EFF7FC;
+  padding: 0.9rem 1rem;
+  font-size: 14pt;
+  border-radius: 2px;
+  color: #171D21;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-property: background, border;
+  border: 1px solid transparent;
+  margin-top: 3px;
+}
+body #wrapper .form form .form-group > input:focus {
+  background: white;
+  border: 1px solid #26A8FF;
+}
+body #wrapper .form form .form-group > input::placeholder {
+  color: #171D21;
+  letter-spacing: 2px;
+}
+body #wrapper .form form .form-group > input.--invalid {
+  border: 1px solid #eb4d4b;
+  background: white;
+}
+body #wrapper .text-danger {
+  color: #eb4d4b !important;
+}
+body #wrapper [class*=btn-] {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0rem 1.5rem;
+  text-decoration: none;
+  color: #171D21;
+  transition: all 0.2s ease-in-out;
+  transition-property: background, color;
+  cursor: pointer !important;
+  margin-left: 10px;
+}
+body #wrapper [class*=btn-] .btn-primary {
+  background: #26A8FF;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+body #wrapper [class*=btn-] .btn-primary:hover {
+  background: rgba(38, 168, 255, 0.8);
+}
+body #wrapper [class*=btn-] .btn-transparent {
+  background: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+body #wrapper [class*=btn-] .btn-transparent:hover {
+  background: rgba(23, 29, 33, 0.05);
+}
+body #wrapper .form-group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+}
+body #wrapper .form-group-row > .col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50% !important;
+}
+body #wrapper .form-group-row > .col [type=radio]:checked,
+body #wrapper .form-group-row > .col [type=radio]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+body #wrapper .form-group-row > .col [type=radio]:checked + label,
+body #wrapper .form-group-row > .col [type=radio]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  color: #171D21;
+  line-height: 22px;
+  padding-left: 27px;
+}
+body #wrapper .form-group-row > .col [type=radio]:checked + label::before,
+body #wrapper .form-group-row > .col [type=radio]:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #171D21;
+  background: white;
+}
+body #wrapper .form-group-row > .col [type=radio]:checked + label::after,
+body #wrapper .form-group-row > .col [type=radio]:not(:checked) + label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #26A8FF;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+body #wrapper .form-group-row > .col [type=radio]:not(:checked) + label::after {
+  opacity: 0;
+  transform: scale(0);
+}
+body #wrapper .form-group-row > .col [type=radio]:checked + label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+body #wrapper .intro {
+  position: sticky;
+  top: 0;
+  display: block;
+  font-family: "Arimo" !important;
+  font-size: 2rem;
+  color: #171D21;
+  line-height: 45px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body #wrapper .intro > .light {
+  font-family: "Hind";
+}
+body #wrapper .intro > .sub-intro {
+  font-family: "Hind";
+  text-transform: none !important;
+  font-weight: normal !important;
+  color: rgba(23, 29, 33, 0.6);
+  font-size: 15pt !important;
+}
+body #wrapper .progress {
+  width: 100% !important;
+  height: fit-content;
+  counter-reset: step;
+}
+body #wrapper .progress .progress-list {
+  position: relative;
+  flex: 1;
+  width: 100% !important;
+  transition: all 0.3s ease-in-out;
+  transition-property: background;
+}
+body #wrapper .progress .progress-list::before {
+  content: counter(step);
+  counter-increment: step;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #EFF7FC;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 43px;
+  color: #171D21;
+  z-index: 2;
+}
+body #wrapper .progress .progress-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  background: #EFF7FC;
+}
+body #wrapper .progress .progress-list:last-child::after {
+  display: none;
+}
+body #wrapper .progress .progress-list.active::after {
+  background: #26A8FF;
+}
+body #wrapper .progress .progress-list.active::before {
+  background-color: #26A8FF;
+  color: white;
+}
+body .container {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 10px !important;
+}
+
+.mt-2 {
+  margin-top: 20px !important;
+}
+
+.mt-3 {
+  margin-top: 30px !important;
+}
+
+.mt-4 {
+  margin-top: 40px !important;
+}
+
+.mt-5 {
+  margin-top: 50px !important;
+}
+
+.mt-n1 {
+  margin-top: -10px !important;
+}
+
+.mt-n2 {
+  margin-top: -20px !important;
+}
+
+.mt-n3 {
+  margin-top: -30px !important;
+}
+
+.mt-n4 {
+  margin-top: -40px !important;
+}
+
+.mt-n5 {
+  margin-top: -50px !important;
+}
+
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+
+.mb-3 {
+  margin-bottom: 30px !important;
+}
+
+.mb-4 {
+  margin-bottom: 40px !important;
+}
+
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
+[class*=ic] {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
